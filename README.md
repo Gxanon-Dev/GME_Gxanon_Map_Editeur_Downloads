@@ -1,4 +1,4 @@
-# Gxanon Map Editor (.NET 8)
+# Gxanon Map Editor [ Remake AME ]
 
 Gxanon Map Editor est un éditeur de maps orienté Dofus/SWF avec outils de calibration GFX, import/export, édition de cellules, traitement SQL/Lang, et intégration d'un helper Java pour les opérations SWF.
 
