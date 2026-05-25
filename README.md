@@ -28,6 +28,4 @@ Gxanon Map Editor est un éditeur de maps orienté Dofus/SWF avec outils de cali
 - Chargement XML/options plus robuste face aux données invalides
 - Rendu OpenSWF ajusté sur plusieurs cas de rotation/chargement
 - Retrait du système de licence applicative
-- Branding visible harmonisé vers `Gxanon`
-- Pipeline de release protégé avec zip final automatisé
 - panel Auto Tiles et PreScéne.
