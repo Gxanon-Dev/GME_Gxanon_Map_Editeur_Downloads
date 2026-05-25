@@ -1,24 +1,29 @@
-# GME_Gxanon_Map_Editeur_Downloads
-Public binary releases for GME Gxanon Map Editor (no source code).
-v1.0.1 
-Ce que j’ai ajouté :
-  - Multi-application du type (Object / Ground / New) sur toutes les tuiles sélectionnées en mode
-    Nouveaux.
-  - Multi-application de la Destination sur toutes les tuiles sélectionnées en
-    mode Nouveaux.
-  - Les tuiles impactées passent en Modified=True et leur texte devient rouge (comme avant, mais en
-    batch).
+Gxanon Map Editor est un éditeur de maps orienté Dofus/SWF avec outils de calibration GFX, import/export, édition de cellules, traitement SQL/Lang, et intégration d'un helper Java pour les opérations SWF.
 
-v1.1.2
-Release notes:
-  - Amélioration réelle des performances au démarrage (traitement de données optimisé, sans lazy mode).
-  - Chargement des maps optimisé:
-    - Scan des fichiers `.gme/.ame` en un seul passage.
-    - Suppression des rescans de dossiers pour construire l’arbre UI.
-    - Déduplication en O(1) (HashSet) pendant le chargement.
-    - Réutilisation du `DataContractSerializer` pour réduire le coût CPU.
-  - Chargement XML optimisé:
-    - Suppression du double parsing systématique.
-    - Désérialisation directe des fichiers.
-    - Réparation automatique conservée uniquement en cas d’XML concaténé invalide.
-  - Suppression du `GC.Collect()` forcé au démarrage pour éviter le gel initial.
+Points clés
+Édition de maps, cellules, layers et zones
+Calibration GFX pour grounds, objects et nouveaux tiles
+Ouverture et traitement de maps SWF
+Outils SQL, Lang et géoposition
+Zoom unifié et overlays de calibration
+Mise à jour applicative via update.exe
+Workflow de publication protégé et packaging renforcé
+Modules principaux
+GME_Gxanon\Main: démarrage, UI principale, options globales, mises à jour
+GME_Gxanon\MapEditor: rendu map, cellules, interactions visuelles
+GME_Gxanon\Calibration: calibration GFX, sync SWF, réglages de draw
+GME_Gxanon\Selector: sélecteurs de maps, zones, GFX et palettes
+GME_Gxanon\Patterns Dofus: structures et traitement des données map
+GME_Gxanon\SWF, GME_Gxanon\FFDec, GME_Gxanon\XMLInjections: pipeline SWF
+GME_Updater: exécutable de mise à jour
+Fonctionnalités récentes
+Stabilité renforcée sur l'ajout de tiles SWF en calibration
+Correction du rendu des tiles Nouveaux et de l'édition de leurs positions
+Zoom calibration amélioré, prise en charge molette et plage étendue
+Chargement XML/options plus robuste face aux données invalides
+Rendu OpenSWF ajusté sur plusieurs cas de rotation/chargement
+Retrait du système de licence applicative
+Branding visible harmonisé vers Gxanon
+Pipeline de release protégé avec zip final automatisé
+Build
+Le code source se modifie dans ce dépôt, mais tous les builds doivent être lancés depuis le workspace de build dédié.
